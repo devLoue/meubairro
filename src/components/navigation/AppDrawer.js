@@ -1,10 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
-import {
-  createDrawerNavigator,
-  DrawerContentScrollView,
-  DrawerItemList
-} from '@react-navigation/drawer';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import { Ionicons } from '@expo/vector-icons';
 
 import PessoasStack  from './PessoasStack';

@@ -8,25 +8,24 @@ export default function SobreScreen() {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>📱 Projeto Modelo: Agendamento de Reuniões 📱</Text>
+      <Text style={styles.title}>📱 Meu Bairro 📱</Text>
 
       <Text style={styles.paragraph}>
-        Este é um aplicativo desenvolvido em React Native com o objetivo de servir como exemplo prático
-        para alunos da Estácio na disciplina de Programação para Dispositivos Móveis (ARA0089).
+        Trabalho de extensão da disciplina PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS EM ANDROID (VIV0175/13431367 / 2025.1 AO VIVO) Turma 3002.
       </Text>
 
       <Text style={styles.paragraph}>
-        O app permite o agendamento de reuniões e o cadastro de pessoas, implementando operações básicas
+        O app permite a publicação de uma postagem e o cadastro de pessoas, implementando operações básicas
         de CRUD (Create, Read, Update, Delete).
       </Text>
 
       <Text style={styles.subtitle}>🧾 Funcionalidades</Text>
       <Text style={styles.paragraph}>
-        • Cadastro de pessoas com informações básicas.{"\n"}
-        • Agendamento de reuniões vinculadas às pessoas cadastradas.{"\n"}
-        • Listagem, edição e exclusão de registros.{"\n"}
-        • Interface simples e intuitiva.
+        • Envio de formulários (Publicações relacionadas ao bairro){"\n"}
+        • Quadro de avisos{"\n"}
+        • Calendário de eventos
       </Text>
+
 
       <Text style={styles.subtitle}>🛠️ Tecnologias Utilizadas</Text>
       <Text style={styles.paragraph}>
