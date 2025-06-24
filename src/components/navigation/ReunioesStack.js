@@ -24,7 +24,7 @@ export default function ReunioesStack() {
         name="ReunioesList"
         component={ReunioesListScreen}
         options={{
-          title: 'Reuniões',
+          title: '',
           headerLeft: () => <DrawerToggleButton tintColor={COLORS.white} />,
         }}
       />
@@ -32,7 +32,7 @@ export default function ReunioesStack() {
       <Stack.Screen
         name="ReuniaoForm"
         component={ReuniaoFormScreen}
-        options={{ title: 'Agendar Reunião' }}
+        options={{ title: 'Nova postagem' }}
       />
 
       <Stack.Screen

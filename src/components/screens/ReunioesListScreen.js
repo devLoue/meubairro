@@ -98,7 +98,7 @@ export default function ReunioesListScreen({ navigation }) {
         renderItem={renderItem}
         ListEmptyComponent={
           <Text style={styles.emptyText}>
-            Nenhuma Reunião encontrado.
+            Nenhuma postagem encontrada.
           </Text>
         }
       />

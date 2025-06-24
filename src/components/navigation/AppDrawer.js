@@ -19,7 +19,7 @@ export default function AppDrawer() {
         headerShown: false,
         drawerIcon: ({ color, size }) => {
           const icons = {
-            Reunioes: 'calendar-outline',
+            Reunioes: 'home',
             Pessoas:  'people-outline',
             Sobre:  'information-circle-outline',
           };
@@ -41,7 +41,7 @@ export default function AppDrawer() {
       <Drawer.Screen
         name="Reunioes"
         component={ReunioesStack}
-        options={{ drawerLabel: 'Reuniões' }}
+        options={{ drawerLabel: 'Início' }}
       />
       <Drawer.Screen
         name="Pessoas"
