@@ -24,7 +24,7 @@ export default function ReunioesStack() {
         name="ReunioesList"
         component={ReunioesListScreen}
         options={{
-          title: 'Reuniões Agendadas',
+          title: 'Reuniões',
           headerLeft: () => <DrawerToggleButton tintColor={COLORS.white} />,
         }}
       />

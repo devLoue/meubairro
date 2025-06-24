@@ -37,9 +37,11 @@ export default function SobreScreen() {
 
       <Text style={styles.subtitle}>📌 Observações</Text>
       <Text style={styles.paragraph}>
-        O aplicativo não possui autenticação de usuários; todas as funcionalidades estão disponíveis
-        sem necessidade de login.{"\n"}
-        Sinta-se à vontade para personalizar e expandir o projeto conforme suas necessidades e criatividade.
+        Fernando Faria de Oliveira                 - Matr. 202302291406{"\n"}  
+        Giovanna Canarin Monteiro                  - Matr. 202302290507{"\n"}  
+        Luiz Filipe Alves Santos                   – Matr. 202302291619{"\n"}  
+        Marcelo Pinheiro Gonçalves Amarante Junior – Matr. 202302673058{"\n"}  
+        Naara Avelino Souza                        – Matr. 202302442323{"\n"} 
       </Text>
     </ScrollView>
   );

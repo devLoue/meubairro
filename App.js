@@ -5,11 +5,14 @@ import AppDrawer from './src/components/navigation/AppDrawer';
 
 export default function App() {
   return (
+    //Hidden = escondido, StatusBar escondida. 
+    //AppDrawer é um componente da pasta navigation
     <>
       <StatusBar hidden />
       <NavigationContainer>
-        <AppDrawer />
+        <AppDrawer /> 
       </NavigationContainer>
     </>
   );
 }
+

@@ -36,6 +36,6 @@ export const saveReunioes = async (reunioes) => {
     }));
     await AsyncStorage.setItem(REUNIOES_KEY, JSON.stringify(toStore));
   } catch (e) {
-    console.error('Erro salvando reuniões', e);
+    console.error('Erro salvando reuniões', e); 
   }
 };
