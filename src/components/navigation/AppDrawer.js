@@ -46,7 +46,7 @@ export default function AppDrawer() {
       <Drawer.Screen
         name="Pessoas"
         component={PessoasStack}
-        options={{ drawerLabel: 'Pessoas' }}
+        options={{ drawerLabel: 'Amigos' }}
       />
       <Drawer.Screen
         name="Sobre"

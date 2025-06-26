@@ -91,9 +91,6 @@ export default function ReuniaoFormScreen({ route, navigation }) {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.header}>
-        {id ? 'Editar Reunião' : 'Nova Reunião'}
-      </Text>
 
       <Text style={styles.label}>Data</Text>
       <TouchableOpacity style={styles.pickerButton} onPress={showDatepicker}>
@@ -121,7 +118,7 @@ export default function ReuniaoFormScreen({ route, navigation }) {
       <Text style={styles.label}>Pauta</Text>
       <TextInput
         style={styles.input}
-        placeholder="Informe a pauta"
+        placeholder="Escreva aqui a sua publicação"
         value={pauta}
         onChangeText={setPauta}
       />
@@ -147,7 +144,7 @@ export default function ReuniaoFormScreen({ route, navigation }) {
         onPress={onReview}
       >
         <Text style={{ color: '#fff', textAlign: 'center', padding: 12, fontWeight: '600' }}>
-          {id ? 'Atualizar Reunião' : 'Revisar Reunião'}
+          {id ? 'Atualizar publicação' : 'Publicar'}
         </Text>
       </TouchableOpacity>
     </ScrollView>
