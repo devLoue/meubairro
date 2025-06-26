@@ -22,7 +22,7 @@ export default function PessoasStack() {
         name="PessoasList"
         component={PessoasListScreen}
         options={{
-          title: 'Lista de Pessoas',
+          title: 'Selecione sua conta',
           headerLeft: () => <DrawerToggleButton tintColor={COLORS.white} />,
         }}
       />

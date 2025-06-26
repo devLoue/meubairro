@@ -82,4 +82,5 @@ export default StyleSheet.create({
     justifyContent: 'center',
     marginLeft: 10,
   },
+
 })

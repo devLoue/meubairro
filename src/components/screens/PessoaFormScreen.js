@@ -8,7 +8,6 @@ import {
   ScrollView,
   Alert
 } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
 import uuid from 'react-native-uuid';
 
 import styles from '../../styles/PessoaFormScreenStyles';
@@ -31,7 +30,7 @@ export default function PessoaFormScreen({ navigation, route }) {
 
   useEffect(() => {
     navigation.setOptions({
-      headerTitle: isEditing ? 'Editar Pessoa' : 'Nova Pessoa'
+      headerTitle: isEditing ? 'Editar conta' : 'Nova conta'
     });
   }, [navigation, isEditing]);
 
@@ -176,17 +175,6 @@ export default function PessoaFormScreen({ navigation, route }) {
           maxLength={14}
         />
         {errors.cpf ? <Text style={styles.error}>{errors.cpf}</Text> : null}
-
-        <Text style={styles.label}>Papel *</Text>
-        <Picker
-          selectedValue={form.papel}
-          onValueChange={v => onChange('papel', v)}
-          style={styles.picker}
-        >
-          <Picker.Item label="Popular" value="popular" />
-          <Picker.Item label="Funcionário" value="funcionario" />
-          <Picker.Item label="Presidente" value="presidente" />
-        </Picker>
 
         <TouchableOpacity
           style={[styles.button, hasErrors() && styles.buttonDisabled]}

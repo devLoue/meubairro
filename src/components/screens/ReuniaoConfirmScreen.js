@@ -4,7 +4,6 @@ import {
   Text,
   ScrollView,
   TouchableOpacity,
-  Alert
 } from 'react-native';
 import uuid from 'react-native-uuid';
 
@@ -37,13 +36,14 @@ export default function ReuniaoConfirmScreen({ route, navigation }) {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Revise seu Reunião</Text>
+      <Text style={styles.title}>Revise sua publicação</Text>
 
-      <Text style={styles.label}>Data e Hora:</Text>
-      <Text style={styles.value}>{formatDateTime(reuniaoDraft.dateTime)}</Text>
-
-      <Text style={styles.label}>Pauta:</Text>
+      
+      <Text style={styles.label}>Ocorrência:</Text>
       <Text style={styles.value}>{reuniaoDraft.pauta}</Text>
+
+      <Text style={styles.label}>Data e Hora da ocorrencia:</Text>
+      <Text style={styles.value}>{formatDateTime(reuniaoDraft.dateTime)}</Text>
 
       <Text style={styles.label}>Convidados:</Text>
       {reuniaoDraft.convidados.map(id => (

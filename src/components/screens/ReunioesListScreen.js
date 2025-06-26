@@ -33,7 +33,7 @@ export default function ReunioesListScreen({ navigation }) {
   const handleDelete = id => {
     Alert.alert(
       'Confirmar exclusão',
-      'Deseja realmente excluir esta Reunião?',
+      'Deseja realmente excluir esta Postagem?',
       [
         { text: 'Cancelar', style: 'cancel' },
         {
@@ -66,10 +66,6 @@ export default function ReunioesListScreen({ navigation }) {
         <View style={styles.info}>
           <Text style={styles.pauta}>{item.pauta}</Text>
           <Text style={styles.date}>{datePart} às {timePart}</Text>
-          
-          <Text style={styles.convidados}>
-            Convidados: {item.convidados?.length || 0}
-          </Text>
         </View>
         <View style={styles.actions}>
           <TouchableOpacity onPress={() => handleDetails(item.id)}>

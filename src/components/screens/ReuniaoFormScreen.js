@@ -91,8 +91,15 @@ export default function ReuniaoFormScreen({ route, navigation }) {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.label}>Ocorrência</Text>
+      <TextInput
+        style={styles.ocorrencia} // 
+        placeholder="Escreva aqui a sua publicação"
+        value={pauta}
+        onChangeText={setPauta}
+      />
 
-      <Text style={styles.label}>Data</Text>
+      <Text style={styles.label}>Data da ocorrência</Text>
       <TouchableOpacity style={styles.pickerButton} onPress={showDatepicker}>
         <Text style={styles.pickerText}>
           {date.toLocaleDateString()}
@@ -115,13 +122,6 @@ export default function ReuniaoFormScreen({ route, navigation }) {
         />
       )}
 
-      <Text style={styles.label}>Pauta</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Escreva aqui a sua publicação"
-        value={pauta}
-        onChangeText={setPauta}
-      />
 
       <Text style={styles.label}>Convidados</Text>
       {pessoas.map(p => (
@@ -132,8 +132,8 @@ export default function ReuniaoFormScreen({ route, navigation }) {
             style={styles.checkbox}
           />
           <Text style={styles.convidadoText}>{p.nome}</Text>
-        </View>
-      ))}
+        </View> 
+      ))} 
 
       <TouchableOpacity
         style={[

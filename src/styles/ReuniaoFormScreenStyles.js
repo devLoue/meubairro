@@ -51,4 +51,15 @@ export default StyleSheet.create({
     overflow: 'hidden', // para o button respeitar o borderRadius
     backgroundColor: '#007AFF',
   },
+
+   ocorrencia: {
+    height: 150,
+    borderWidth: 1,
+    borderColor: '#cccccc',
+    borderRadius: 6,
+    paddingHorizontal: 12,
+    marginBottom: 16,
+    backgroundColor: '#f5f5f5',
+    fontSize: 16,
+  }
 })

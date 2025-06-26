@@ -28,7 +28,7 @@ export default function PessoasListScreen({ navigation }) {
   const handleDelete = (id) => {
     Alert.alert(
       'Confirmação',
-      'Deseja realmente excluir esta pessoa?',
+      'Deseja realmente excluir esta conta?',
       [
         { text: 'Cancelar', style: 'cancel' },
         {
@@ -73,7 +73,7 @@ export default function PessoasListScreen({ navigation }) {
         keyExtractor={(p) => p.id}
         renderItem={renderItem}
         contentContainerStyle={styles.listContainer}
-        ListEmptyComponent={<Text style={styles.emptyText}>Nenhuma pessoa cadastrada</Text>} 
+        ListEmptyComponent={<Text style={styles.emptyText}>Nenhuma conta cadastrada</Text>} 
       />
       <TouchableOpacity
         style={styles.addButton}

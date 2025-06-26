@@ -43,15 +43,15 @@ export default function ReuniaoDetailScreen({ route, navigation }) {
   if (!reuniao) {
     return (
       <View style={styles.container}>
-        <Text style={styles.notFound}>Reunião não encontrado.</Text>
+        <Text style={styles.notFound}>Postagem não encontrada.</Text>
       </View>
     );
   }
 
   const onDelete = () => {
     Alert.alert(
-      'Cancelar reunião',
-      'Deseja realmente cancelar este Reunião?',
+      'Cancelar Postagem',
+      'Deseja realmente cancelar esta Postagem??',
       [
         { text: 'Não', style: 'cancel' },
         {
@@ -70,7 +70,7 @@ export default function ReuniaoDetailScreen({ route, navigation }) {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.header}>Detalhes da Reunião</Text>
+      <Text style={styles.header}>Editar postagem</Text>
 
       <View style={styles.card}>
         <Text style={styles.label}>Data e Hora</Text>
@@ -81,10 +81,10 @@ export default function ReuniaoDetailScreen({ route, navigation }) {
         <Text style={styles.label}>Pauta</Text>
         <Text style={styles.value}>{reuniao.pauta}</Text>
 
-        <Text style={styles.label}>Convidados</Text>
+        <Text style={styles.label}>Usuário</Text>
         {reuniao.convidados.map(cid => (
           <Text key={cid} style={styles.value}>
-            • {pessoasMap[cid]?.nome} ({pessoasMap[cid]?.papel})
+            • {pessoasMap[cid]?.nome}
           </Text>
         ))}
       </View>

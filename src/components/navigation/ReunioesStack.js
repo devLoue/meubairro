@@ -24,7 +24,7 @@ export default function ReunioesStack() {
         name="ReunioesList"
         component={ReunioesListScreen}
         options={{
-          title: '',
+          title: 'Suas postagens',
           headerLeft: () => <DrawerToggleButton tintColor={COLORS.white} />,
         }}
       />
