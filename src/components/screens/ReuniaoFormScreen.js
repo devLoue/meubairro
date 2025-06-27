@@ -93,7 +93,8 @@ export default function ReuniaoFormScreen({ route, navigation }) {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.label}>Ocorrência</Text>
       <TextInput
-        style={styles.ocorrencia} // 
+        style={styles.ocorrencia}
+        multiline={true}
         placeholder="Escreva aqui a sua publicação"
         value={pauta}
         onChangeText={setPauta}
@@ -123,7 +124,7 @@ export default function ReuniaoFormScreen({ route, navigation }) {
       )}
 
 
-      <Text style={styles.label}>Convidados</Text>
+      <Text style={styles.label}>Usuário</Text>
       {pessoas.map(p => (
         <View key={p.id} style={styles.convidadoItem}>
           <Checkbox

@@ -61,5 +61,6 @@ export default StyleSheet.create({
     marginBottom: 16,
     backgroundColor: '#f5f5f5',
     fontSize: 16,
+    paddingBottom: 122
   }
 })
