@@ -15,14 +15,16 @@ export default function SobreScreen() {
       </Text>
 
       <Text style={styles.paragraph}>
-        O app permite a publicação de uma postagem implementando operações básicasde CRUD (Create, Read, Update, Delete).
+        O app permite a publicação de uma postagem implementando operações básicas de CRUD (Create, Read, Update, Delete).
       </Text>
 
       <Text style={styles.subtitle}>🧾 Funcionalidades</Text>
       <Text style={styles.paragraph}>
-        • Envio de formulários (Publicações relacionadas ao bairro){"\n"}
-        • Quadro de avisos{"\n"}
-        • Calendário de eventos
+        • Oferecer serviços{"\n"}
+        • Publicar avisos{"\n"}
+        • Editar ou remover postagens{"\n"}
+        • Adicionar, remover e editar multiplas contas{"\n"}
+        
       </Text>
 
 

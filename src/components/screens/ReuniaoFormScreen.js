@@ -100,7 +100,7 @@ export default function ReuniaoFormScreen({ route, navigation }) {
         onChangeText={setPauta}
       />
 
-      <Text style={styles.label}>Data da ocorrência</Text>
+      <Text style={styles.label}>Data</Text>
       <TouchableOpacity style={styles.pickerButton} onPress={showDatepicker}>
         <Text style={styles.pickerText}>
           {date.toLocaleDateString()}
